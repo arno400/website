@@ -1,16 +1,13 @@
 <html>
 <head>
 <style>
-@import url("https://fonts.googleapis.com/css?family=Bevan");
+    @import
+ url("https://fonts.googleapis.com/css?family=Bevan");
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-    background: rgb(40,40,40);
+    background: rgb(0,40,40);
     overflow: hidden;
 }
 
@@ -26,11 +23,12 @@ p {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-
+    }
     span {
         font-size: 1.2em;
+        color: #f0c674;
     }
-}
+
 
 code {
     color: #bdbdbd;
@@ -38,10 +36,8 @@ code {
     display: block;
     font-size: 16px;
     margin: 0 30px 25px;
-
-    span {
-        color: #f0c674;
     }
+    
 
     i {
         color: #b5bd68;
@@ -56,7 +52,7 @@ code {
         color: #81a2be;
         font-weight: 500;
     }
-}
+    
 
 
 a {
@@ -83,7 +79,7 @@ a {
 
   
   
-<p>HTTP: <span>404</span></p>
+<p>HTTP: 404</p>
 <code><span>this_page</span>.<em>not_found</em> = true;</code>
 <code><span>if</span> (<b>you_spelt_it_wrong</b>) {<span>try_again()</span>;}</code>
 <code><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i>"We're really sorry about that."</i>); <span>window</span>.<em>location</em> = home;}</code>
