@@ -1,0 +1,323 @@
+/* Google Fonts: Poppins*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+section {
+	padding: 3rem 9%;
+}
+
+:root {
+	--primary-color: #f9ab00;
+	--box-shadow: 0.5rem 0.5rem 0 #10221b;
+	--border: 0.2rem solid #10221b;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	border: 0.2rem solid #10221b;
+	color: #10221b;
+	cursor: pointer;
+	background: none;
+	font-size: 1.7rem;
+	padding: 1rem 3rem;
+}
+
+.btn:hover {
+	background: #10221b;
+	color: #fff;
+}
+
+.services {
+	padding: 2rem 9%;
+}
+
+.rooms {
+	padding: 2rem 9%;
+}
+
+.packages {
+	padding: 2rem 9%;
+}
+
+.membership {
+	padding: 2rem 9%;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 5rem;
+	padding-top: 7rem;
+	font-size: 4rem;
+	color: #10221b;
+	margin-top: 5rem;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 7rem;
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: #1a191f;
+	color: #fff;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #1a191f;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	text-transform: capitalize;
+	transition: 0.2s ease-in;
+}
+
+:root {
+	--primary-color: #f9ab00;
+	--box-shadow: 0.5rem 0.5rem 0 #10221b;
+	--border: 0.2rem solid #10221b;
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	border: 0.2rem solid #10221b;
+	color: #10221b;
+	cursor: pointer;
+	background: none;
+	font-size: 1.7rem;
+	padding: 1rem 3rem;
+}
+
+.btn:hover {
+	background: #10221b;
+	color: #fff;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 7rem;
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background-color: #1a191f;
+	color: #fff;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #1a191f;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* Navbar Section Starts  */
+
+header {
+	padding: 1rem 10%;
+	background-color: #1a191f;
+}
+
+header .navbar-brand span {
+	color: var(--primary-color);
+}
+
+header .navbar-brand {
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+.nav-link {
+	text-decoration: underline #f9ab00;
+}
+
+header .navbar-nav li a {
+	color: #fff !important;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.fa-bars {
+	color: #fff;
+	font-size: 2rem !important;
+}
+
+.navbar-toggler {
+	outline: none !important;
+}
+
+.dropdown-menu {
+	width: 21rem;
+	background-color: #1a191f;
+	margin: auto;
+	border: 2px solid #f9ab00;
+}
+
+.dropdown-item {
+	text-decoration: underline #f9ab00;
+}
+
+.dropdown-item:hover {
+	background-color: #000;
+}
+
+
+/* Navbar Section Ends  */
+
+
+/* About Section Starts  */
+
+.about {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.about .image {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 40rem;
+	flex: 1 1 40rem;
+}
+
+.about .image img {
+	width: 100%;
+	border-radius: 2rem;
+}
+
+.about .content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 40rem;
+	flex: 1 1 40rem;
+}
+
+.about .content span {
+	color: var(--primary-color);
+	font-size: 2.5rem;
+}
+
+.about .content h3 {
+	color: #222;
+	font-size: 3rem;
+	padding-top: 0.5rem;
+}
+
+.about .content p {
+	color: #666;
+	font-size: 1.4rem;
+	line-height: 2;
+	padding: 1rem 0;
+}
+
+
+/* About Section Ends */
+
+
+/* Footer Section Starts  */
+
+.footer {
+	background: #f3f3f3;
+}
+
+.footer .box-container {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+	font-size: 2.2rem;
+	color: #222;
+	padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+	font-size: 1.5rem;
+	color: #666;
+	padding-bottom: 0.5rem;
+}
+
+.footer .box-container .box a {
+	font-size: 1.4rem;
+	color: #666;
+	padding: 1rem 0;
+	display: block;
+}
+
+.footer .box-container .box a:hover {
+	color: var(--primary-color);
+}
+
+.footer .box-container .box a:hover i {
+	padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+	padding-right: 0.5rem;
+	color: var(--primary-color);
+}
+
+.footer .box-container .box form input[type="email"] {
+	width: 100%;
+	padding: 1rem 1.2rem;
+	font-size: 1.6rem;
+	color: #222;
+	margin: 1rem 0;
+	text-transform: none;
+}
+
+.footer .box-container .box .payment {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.credit {
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 2rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* Footer Section Ends */
