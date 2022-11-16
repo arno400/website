@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +16,7 @@
   <!-- Font Awesome CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
   <!-- Font Awesome CDN  -->
@@ -156,8 +156,20 @@ header .navbar-nav li a{
 }
 
 
-  body{
-
+ .dropdown{
+ 	content: none;
+ 	display: none;
+  }
+  .nav-dropdown{
+  	border-radius: 20px 0px 20px 0px;
+  	font-size: 20px;
+  	color: wheat;
+  	padding: 2px 2px 2px 2px;
+  	border: solid 5px white;
+  }
+    .nav-dropdown:hover .dropdown{
+  	content: normal;
+  	display: grid;
   }
 
 
@@ -418,151 +430,6 @@ box h3{
 .steps{
       flex-direction:i;
 }
-/* Google Fonts: Poppins*/
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-.about {
-	padding: 3rem 9%;
-}
-
-:root {
-	--primary-color: #f9ab00;
-	--box-shadow: 0.5rem 0.5rem 0 #10221b;
-	--border: 0.2rem solid #10221b;
-}
-
-.btn {
-	margin-top: 1rem;
-	display: inline-block;
-	border: 0.2rem solid #10221b;
-	color: #10221b;
-	cursor: pointer;
-	background: none;
-	font-size: 1.7rem;
-	padding: 1rem 3rem;
-}
-
-.btn:hover {
-	background: #10221b;
-	color: #fff;
-}
-
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
-	text-transform: capitalize;
-	transition: 0.2s ease-in;
-}
-
-:root {
-	--primary-color: #f9ab00;
-	--box-shadow: 0.5rem 0.5rem 0 #10221b;
-	--border: 0.2rem solid #10221b;
-}
-
-.btn {
-	margin-top: 1rem;
-	display: inline-block;
-	border: 0.2rem solid #10221b;
-	color: #10221b;
-	cursor: pointer;
-	background: none;
-	font-size: 1.7rem;
-	padding: 1rem 3rem;
-}
-
-.btn:hover {
-	background: #10221b;
-	color: #fff;
-}
-
-html {
-	font-size: 62.5%;
-	overflow-x: hidden;
-	scroll-padding-top: 7rem;
-	scroll-behavior: smooth;
-}
-
-::selection {
-	background-color: #1a191f;
-	color: #fff;
-}
-
-::-webkit-scrollbar {
-	width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #1a191f;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-a {
-	text-decoration: none;
-	color: #000;
-}
-
-
-
-
-/* About Section Starts  */
-
-.about {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	gap: 5rem;
-}
-
-.about .image {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 40rem;
-	flex: 1 1 40rem;
-}
-
-.about .image img {
-	width: 100%;
-	border-radius: 2rem;
-}
-
-.about .content {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 40rem;
-	flex: 1 1 40rem;
-}
-
-.about .content span {
-	color: var(--primary-color);
-	font-size: 2.5rem;
-}
-
-.about .content h3 {
-	color: #222;
-	font-size: 3rem;
-	padding-top: 0.5rem;
-}
-
-.about .content p {
-	color: #666;
-	font-size: 1.4rem;
-	line-height: 2;
-	padding: 1rem 0;
-}
-
-
-/* About Section Ends */
-
 
 </style>
 </head>
@@ -587,19 +454,24 @@ a {
               <a class="nav-link" href="#about"> About Us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html"> Products </a>
+              <a class="nav-link" href="tel:123 456 7890"> Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing"> Our Pricing </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Events.html"> Events </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="course.html"> Courses </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tel:123 456 7890"> Contact </a>
+            <li class="nav-item nav-dropdown">
+              More 
+              <ul class="dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing"> Pricing </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Events.html"> Events </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="course.html"> Courses </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="books.html"> books </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -613,8 +485,8 @@ a {
 
   <!-- home section starts  -->
   <section class="home"><z>
-<h1><aarav>Welcome to our </aarav><span>website</span>
-  <avi>Quoki</avi> <avi>Tech</avi></h1>
+<h1><aarav>Welcome to our </aarav><span>website</span><br>
+<avi>Quoki</avi> <avi>Tech</avi></h1>
 </z>
   </section>
 
@@ -805,3 +677,5 @@ type(2, 1300);
 </body>
 
 </html>
+
+
