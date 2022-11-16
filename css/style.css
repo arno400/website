@@ -136,16 +136,12 @@ header{
 }
  
 
-.navbar-brand{
+header .navbar-brand span{
   color: var(--primary-color);
 }
-.navbar-brand{
-    padding: 10px;
-
-  font-size: 50px;
+header .navbar-brand{
+  font-size: 2.5rem;
   color: #fff;
-  border: solid 10px yellow;
-  border-radius: 100px;
 }
 
 header .navbar-nav li a{
