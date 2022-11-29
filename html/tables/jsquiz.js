@@ -1,6 +1,6 @@
 (function() {
     var questions = [{
-      question: "Which of these represents the body content of an HTML table and used along with <thead> and <tfoot>?",
+      question: "Which of these represents the body content of an HTML table and used along with thead and tfoot?",
       choices: ["em", "header", "p", "tbody"],
       correctAnswer: 3
     }, {
