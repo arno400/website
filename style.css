@@ -9,8 +9,8 @@ ul{
   flex-wrap: wrap;
 }
 .list{
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
@@ -59,7 +59,7 @@ body {
 .card {
   margin: 20px;
   padding: 20px;
-  width: 200px;
+  width: 225px;
   min-height: 200px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
