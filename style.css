@@ -62,7 +62,7 @@ body {
   margin: 20px;
   padding: 20px;
   width: 200px;
-  min-height: 200px;
+  min-height: 175px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
@@ -339,13 +339,13 @@ header .navbar-nav li a{
 }
 /* Footer Section Ends */
 .card__title  {
-  font-size: 30px;
+  font-size: 19px;
   font-weight: 400;
   text-decoration: none;
 
 }
 .card__title li a  {
-  font-size: 30px;
+  font-size: 19px;
   font-weight: 400;
   text-decoration: none;
   color: blue;
